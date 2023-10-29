@@ -1,0 +1,251 @@
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    padding: 0 50px;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  .btn-login {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    color: white;
+  }
+
+  .hamburger-menu.active .bar:first-child {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.active .bar:last-child {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navbar-menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: black;
+    z-index: 1;
+  }
+
+  .navbar-menu.active li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .navbar-menu.active li a {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .navbar-menu li a:hover {
+    color: navy;
+    font-size: 2rem;
+  }
+
+  .btn-login.active {
+    display: flex;
+    justify-content: center;
+    top: 80px;
+    left: auto;
+    z-index: 1;
+  }
+
+  /* Jumbotron */
+  .jumbotron .title h2 {
+    color: navy;
+    font-weight: 600;
+    font-size: 45px;
+  }
+
+  .jumbotron .title p {
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 0.2em;
+  }
+
+  /* About */
+  .about_section .left {
+    padding-right: 20%;
+  }
+
+  .about_section .right img {
+    display: none;
+  }
+
+  /* Activity */
+  .activity .title h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .activity .title p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .activity .card {
+    width: 370px;
+    height: 350px;
+    margin: 0 10px;
+    padding: 10px;
+  }
+
+  /* Contact us */
+  form {
+    padding: 0 50px;
+  }
+}
+
+/* smartphone */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 10px;
+  }
+
+  .navbar-menu {
+    display: none;
+    margin-top: -10px;
+  }
+
+  .btn-login {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    color: white;
+  }
+
+  .hamburger-menu.active .bar:first-child {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.active .bar:last-child {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navbar-menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: black;
+    z-index: 1;
+    padding: 20px;
+  }
+
+  .navbar-menu.active li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .navbar-menu li a:hover {
+    color: rgb(133, 133, 133);
+    font-size: 1.1rem;
+  }
+
+  .navbar-menu.active li a {
+    text-align: center;
+  }
+
+  .btn-login.active {
+    display: flex;
+    top: 80px;
+    left: auto;
+    z-index: 1;
+  }
+
+  /* Jumbotron */
+  .jumbotron .title {
+    padding: 250px 15px;
+    text-align: left;
+  }
+
+  .jumbotron .title h1 {
+    font-family: 'Caveat', cursive;
+    color: white;
+    text-align: left;
+    font-weight: 400;
+    font-size: 35px;
+    letter-spacing: 0.05em;
+  }
+
+  .jumbotron .title h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .jumbotron .title p {
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 0.2em;
+  }
+
+  .jumbotron .title button {
+    margin-top: 10px;
+  }
+
+  /* About */
+  .about_section .right img {
+    display: none;
+  }
+
+  .about_section .left {
+    padding-right: 0;
+  }
+
+  /* Activity */
+  .activity .title h1 {
+    text-align: center;
+  }
+
+  .activity .title p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .activity .card {
+    width: 340px;
+    height: 350px;
+    margin: 0 5px;
+    padding: 10px;
+  }
+
+  /* Contact us */
+  form {
+    padding: 0;
+  }
+}
